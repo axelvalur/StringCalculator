@@ -22,8 +22,14 @@ it("Should return sum of two numbers", () =>
 
 //Tests for the second step
 
-//Testing adding multiple numbers
+//Testing adding 3 numbers
 it("Should return the sum of 3 numbers", () => 
 {
     expect(add("1,2,3")).toBe(6);
+});
+
+//Testing adding 5 numbers
+it("Should return the sum of 5 numbers", () => 
+{
+    expect(add("1,2,3,4,5")).toBe(15);
 });
