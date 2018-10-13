@@ -33,3 +33,11 @@ it("Should return the sum of 5 numbers", () =>
 {
     expect(add("1,2,3,4,5")).toBe(15);
 });
+
+//Tests for the third step
+
+//Testing if it recognizes \n as a delimiter
+it("Should return the sum of 3 numbers", () => 
+{
+    expect(add("1,2\n3")).toBe(6);
+});

@@ -4,9 +4,9 @@ function add (numbers)
     {
         return 0;
     }
-    else if(numbers.includes(","))
+    else if(numbers.includes(",","\n"))
     {
-        var numberArray = numbers.split(",");
+        var numberArray = numbers.split(/[,\n]+/);
         return sum(numberArray);
     }
     else
